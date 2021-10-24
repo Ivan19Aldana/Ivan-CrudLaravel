@@ -1,5 +1,5 @@
 @extends('layouts.base')
-
+@section('content')
 <div class="container mt-5">
 
     <div class="row justify-content-center">
@@ -25,7 +25,6 @@
             <div class="card">
                 <form action="{{ url ('/save') }}" method="POST">
                     @csrf
-                    
 
                     <div class="card-header text-center">AGREGAR USUARIO</div>
 
@@ -68,3 +67,4 @@
     </div>
     <a class="btn btn-info btn-xs mt-5" href=" {{ url('/') }}">&laquo volver</a>
 </div>
+@endsection

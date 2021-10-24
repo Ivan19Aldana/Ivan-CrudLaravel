@@ -13,5 +13,14 @@
 </head>
 <body>
 
+<nav class="navbar navbar-dark bg-danger">
+<a class="navbar-brand" href="{{url('/')}}"> Menu de Usuarios </a>
+  <!-- Navbar content -->
+</nav>
+
+<div class="container">
+    @yield('content')
+    </div>
+
 </body>
 </html>
